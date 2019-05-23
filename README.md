@@ -2,7 +2,7 @@
 Just a little random script on go.
 
 ### Are you tired of people telling you stupid things over chat ?
-Now you can revenge!
+Now you can get revenge!
 
 # Usage :
 
