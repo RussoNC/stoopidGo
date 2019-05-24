@@ -7,13 +7,22 @@ Now you can get revenge!
 # Usage :
 
 ```sh
-go build
+go build stoopidGo
 
-./lolScript -phrase="Lorem impsun dolor something"
+./stoopidGo -phrase="Lorem impsun dolor something" 
 
 //Output:
 lOrEm ImPsUn DoLoR sOmEtHiNg
 47.024
+```
+
+Note: -showtime flag it's true by default, if you don't wish to see the execution time just set it to false :
+
+```
+./stoopidGo -phrase="Lorem impsun dolor something" -showtime=false
+
+//Output:
+lOrEm ImPsUn DoLoR sOmEtHiNg
 ```
 
 # FAQ
