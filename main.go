@@ -14,6 +14,8 @@ func main() {
 
 	//Set the flag
 	phraseFlag := flag.String("phrase", "foo", "a string")
+	printExecTime := flag.Bool("showtime", true, "a bool")
+
 	flag.Parse()
 
 	//Set the string builder
@@ -47,10 +49,14 @@ func main() {
 	}
 
 	fmt.Println(chainString.String())
-	//Get the execution time in ms
-	t := time.Now()
-	elapsed := t.Sub(start)
-	fmt.Println(elapsed.Seconds()*1e6)
+
+	if *printExecTime {
+		//Get the execution time in ms
+		t := time.Now()
+		elapsed := t.Sub(start)
+		fmt.Println(elapsed.Seconds()*1e6)
+	}
+
 }
 
 func getRune(stringToTransform string) rune {
