@@ -23,7 +23,6 @@ func main() {
 
 	slicedFlagContent :=  strings.Split(*phraseFlag,"")
 
-	wasUpper := false
 	wasLower := false
 
 	for i, _ := range slicedFlagContent {
@@ -38,11 +37,9 @@ func main() {
 				modifiedChar := strings.ToLower(slicedCharacter)
 				chainString.WriteString(modifiedChar)
 				wasLower = true
-				wasUpper = false
-			} else if !wasUpper {
+			} else {
 				modifiedChar := strings.ToUpper(slicedCharacter)
 				chainString.WriteString(modifiedChar)
-				wasUpper = true
 				wasLower = false
 			}
 		}
