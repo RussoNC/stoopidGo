@@ -1,4 +1,7 @@
+[![Go Report Card](https://goreportcard.com/badge/github.com/RussoNC/stoopidGo)](https://goreportcard.com/report/github.com/RussoNC/stoopidGo)
+
 # stoopidGo
+
 Just a little random script on go.
 
 ### Are you tired of people telling you stupid things over chat ?

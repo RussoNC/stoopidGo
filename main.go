@@ -1,8 +1,8 @@
 package main
 
 import (
-    "fmt"
 	"flag"
+	"fmt"
 	"strings"
 	"time"
 )
@@ -21,7 +21,7 @@ func main() {
 	//Set the string builder
 	var chainString strings.Builder
 
-	slicedFlagContent :=  strings.Split(*phraseFlag,"")
+	slicedFlagContent := strings.Split(*phraseFlag, "")
 
 	wasLower := false
 
@@ -30,7 +30,7 @@ func main() {
 		slicedCharacter := slicedFlagContent[i]
 
 		//Detect special characters
-		if getRune(slicedCharacter) < 'A' || getRune(slicedCharacter) > 'z'  {
+		if getRune(slicedCharacter) < 'A' || getRune(slicedCharacter) > 'z' {
 			chainString.WriteString(slicedCharacter)
 		} else {
 			if !wasLower {
@@ -51,7 +51,7 @@ func main() {
 		//Get the execution time in ms
 		t := time.Now()
 		elapsed := t.Sub(start)
-		fmt.Println(elapsed.Seconds()*1e6)
+		fmt.Println(elapsed.Seconds() * 1e6)
 	}
 
 }
